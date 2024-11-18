@@ -22,6 +22,24 @@ body{
     display: flex;
     column-gap: 7rem;
 }
+.container.Start .user_result {
+    transform-origin: left;
+    animation: userShake 0.7s ease infinite;
+    }
+    @keyframes userShake {
+    50%{
+    transform: rotate(10deg);
+    }
+    }
+.container.Start .cpu_result {
+    transform-origin: right;
+    animation: cpuShake 0.7s ease infinite;
+    }
+    @keyframes cpuShake {
+    50% {
+    transform: rotate(-10deg);
+    }
+    }
 .result_images img{
     width: 100px;
 }
